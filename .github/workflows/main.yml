@@ -1,0 +1,21 @@
+name: Send message
+
+on:
+  schedule:
+    - cron: '0 0 * * *'  # Runs every day at 08:05
+
+jobs:
+  send-message:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Send message
+      run: |
+        curl -X POST 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=ff3d8b36-1227-4210-baa9-0455eea25574' \
+        -H 'Content-Type: application/json' \
+        -d '{
+          "msgtype": "text",
+          "text": {
+            "content": "abc很好"
+          }
+        }'
