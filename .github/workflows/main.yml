@@ -3,7 +3,6 @@ name: Send message
 on:
   schedule:
     - cron: '* * * * *'  # 定时任务
-  workflow_dispatch:      # 手动触发
 
 jobs:
   send-message:
