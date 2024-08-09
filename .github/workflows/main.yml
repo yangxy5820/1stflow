@@ -2,7 +2,7 @@ name: Send message
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # Runs every day at 08:05
+    - cron: '0 0 * * *'  # Runs every day at 08:01
 
 jobs:
   send-message:
