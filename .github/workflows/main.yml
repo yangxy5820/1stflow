@@ -12,7 +12,7 @@ jobs:
     steps:
     - name: Send message
       run: |
-        curl -X POST 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=ff3d8b36-1227-4210-baa9-0455eea25574' \
+        curl -X POST 'https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=cb6c67a2-8e6e-46cd-95fb-12014d909d5b' \
         -H 'Content-Type: application/json' \
         -d '{
           "msgtype": "text",
